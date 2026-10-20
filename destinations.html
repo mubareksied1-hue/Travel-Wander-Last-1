@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Destinations — Wonderstast Travel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer>
+    </script>
+  </head>
+  <body>
+    <div id="site-header">
+    </div>
+    <main id="main-content" class="page-main" tabindex="-1">
+      <header class="page-hero">
+        <p class="eyebrow">
+          A WORLD TO WANDER
+        </p>
+        <h1>
+          Find your <em>somewhere.</em>
+        </h1>
+        <p>
+          Wild mornings, salt-air afternoons, and everything in between.
+        </p>
+      </header>
+      <section class="section-wrap listing-section">
+        <div class="filter-bar">
+          <label class="search-box">
+            <span>⌕</span>
+            <input id="destination-search" type="search" placeholder="Search places…" aria-label="Search destinations">
+          </label>
+          <div class="filter-buttons" aria-label="Filter destinations">
+            <button class="filter-button active" data-filter="All">
+              All places
+            </button>
+            <button class="filter-button" data-filter="Safari">
+              Safari
+            </button>
+            <button class="filter-button" data-filter="Coast">
+              Coast
+            </button>
+            <button class="filter-button" data-filter="Culture">
+              Culture
+            </button>
+            <button class="filter-button" data-filter="Nature">
+              Nature
+            </button>
+          </div>
+          <a class="text-link favorites-shortcut" href="favorites.html">Saved <span id="saved-count">0</span> ♡</a>
+        </div>
+        <div id="destination-list" class="destination-grid listing-grid">
+        </div>
+        <p id="empty-state" class="empty-state" hidden>
+          No places found. Try another search.
+        </p>
+      </section>
+    </main>
+    <div id="site-footer">
+    </div>
+  </body>
+</html>

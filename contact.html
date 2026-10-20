@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Plan a trip — Wonderstast Travel</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer>
+    </script>
+  </head>
+  <body>
+    <div id="site-header">
+    </div>
+    <main id="main-content" class="page-main" tabindex="-1">
+      <header class="page-hero">
+        <p class="eyebrow">
+          LET’S MAKE A PLAN
+        </p>
+        <h1>
+          Where are you <em>dreaming of?</em>
+        </h1>
+        <p>
+          Share a little about your trip. This form is a preview; email us directly to start planning.
+        </p>
+      </header>
+      <section class="contact-layout section-wrap">
+        <div class="contact-note">
+          <p class="eyebrow">
+            GOOD THINGS START WITH HELLO
+          </p>
+          <h2>
+            A journey begins with a <em>conversation.</em>
+          </h2>
+          <p>
+            Tell us what you have in mind, even if it’s just a feeling or a place you’ve been thinking about.
+          </p>
+          <p class="contact-email">
+            <a href="mailto:hello@wonderstast.travel">hello@wonderstast.travel</a>
+            <br>
+            Nairobi, Kenya
+          </p>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <label>
+            Your name
+            <input name="name" required minlength="2" placeholder="How should we call you?">
+          </label>
+          <label>
+            Email address
+            <input type="email" name="email" required placeholder="you@example.com">
+          </label>
+          <label>
+            Where would you like to go?
+            <select name="destination" required>
+              <option value="">Choose a destination</option><option>Maasai Mara</option><option>Watamu Coast</option><option>Lamu Island</option><option>Aberdare Highlands</option><option>Amboseli</option><option>Diani Beach</option><option>Somewhere else</option>
+            </select>
+          </label>
+          <label>
+            Tell us a little more
+            <textarea name="message" rows="4" required minlength="10" placeholder="Dates, people, the feeling you’re after…">
+            </textarea>
+          </label>
+          <button class="button button-dark" type="submit">
+            Send your note<span>↗</span>
+          </button>
+          <p id="form-message" class="form-message" role="status">
+          </p>
+        </form>
+      </section>
+    </main>
+    <div id="site-footer">
+    </div>
+  </body>
+</html>
